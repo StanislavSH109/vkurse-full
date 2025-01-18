@@ -11,6 +11,10 @@
   &__content {
     display: flex;
     align-items: center;
+    
+    @media (max-width: 1100px) {
+      justify-content: space-between;
+    }
   }
 
   &__logo-link {
@@ -41,6 +45,7 @@
     @media(max-width: 1100px) {
       font-size: 16px;
       line-height: 20px;
+      margin: 0 15px 0 0;
     }
   }
 
@@ -60,13 +65,14 @@
     background-color: transparent;
     color: $color-endeavour;
 
-    @media(max-width: 1100px) {
-      font-size: ;
-    }
-
     svg {
       height: 32px;
       width: 32px;
+
+      @media (max-width: 1100px) {
+        height: 25px;
+        width: 25px;
+      }
     }
   }
 }

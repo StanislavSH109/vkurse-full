@@ -422,6 +422,11 @@ a {
   display: flex;
   align-items: center;
 }
+@media (max-width: 1100px) {
+  .header__content {
+    justify-content: space-between;
+  }
+}
 .header__logo-link {
   display: flex;
   align-items: center;
@@ -450,6 +455,7 @@ a {
   .header__phone {
     font-size: 16px;
     line-height: 20px;
+    margin: 0 15px 0 0;
   }
 }
 .header__users-list {
@@ -470,6 +476,12 @@ a {
 .header__users-link svg {
   height: 32px;
   width: 32px;
+}
+@media (max-width: 1100px) {
+  .header__users-link svg {
+    height: 25px;
+    width: 25px;
+  }
 }
 
 .main-nav__list {
@@ -492,6 +504,12 @@ a {
   line-height: 24px;
   font-weight: 500;
   color: #29539B;
+}
+@media (max-width: 1100px) {
+  .main-nav__link {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .breadcrumbs {
