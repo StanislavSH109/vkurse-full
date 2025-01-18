@@ -1,10 +1,35 @@
 .main-nav {
   @include vp-1023 {
-    display: none;
+    position: fixed;
+    width: 100%;
+    height: calc(100vh - 80px);
+    top: 81px;
+    left: 0;
+    background-color: $color-endeavour;
+    padding: 50px 0;
+  }
+
+  &__inner {
+    @include vp-1023{
+      display: flex;
+      width: 100%;
+      gap: 120px;
+      justify-content: center;
+    }
+
   }
   
   &__head {
     display: none;
+
+    @include vp-1023 {
+      display: flex;
+      color: $color-white;
+      font-size: 22px;
+      line-height: 26px;
+      font-weight: 500;
+      margin: 0 0 40px;
+    }
   }
 
   &--menu {
@@ -19,9 +44,13 @@
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
-    
+
     &--menu {
       display: none;
+
+      @include vp-1023 {
+        display: flex;
+      }
     }
 
     @media(max-width: 1250px) {
@@ -29,23 +58,23 @@
     }
 
     @include vp-1023 {
-      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      width: 150px;
+      align-items: flex-start;
     }
   }
 
   &__social {
     display: none;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
     flex-wrap: wrap;
+
+    @include vp-1023 {
+      display: flex;
+    }
   }
 
-  &__social-logo {
-    w
-  }
 
   &__link {
     display: flex;
@@ -57,6 +86,12 @@
     @media (max-width: 1100px) {
       font-size: 14px;
       line-height: 20px;
+    }
+
+    @include vp-1023 {
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-white;
     }
   }
 }
