@@ -377,9 +377,9 @@ a {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1360px;
   margin: 0 auto;
-  padding: 0 60px;
+  padding: 0 20px;
 }
 @media (max-width: 1023px) {
   .container {
@@ -432,6 +432,9 @@ a {
   height: 60px;
   width: 170px;
 }
+.header__main-nav {
+  margin: 0 20px 0 0;
+}
 .header__phone {
   color: #29539B;
   font-size: 18px;
@@ -466,6 +469,11 @@ a {
   align-items: center;
   gap: 40px;
   flex-wrap: wrap;
+}
+@media (max-width: 1250px) {
+  .main-nav__list {
+    gap: 10px;
+  }
 }
 .main-nav__link {
   display: flex;
