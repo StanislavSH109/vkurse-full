@@ -4,6 +4,6 @@
   <img src="assets/desktop.png">
 </p>
 <h2>Mobile - 425 :vibration_mode:</h2>
-<p>
+<p align="center">
   <img src="assets/mobile.png">
 </p>
