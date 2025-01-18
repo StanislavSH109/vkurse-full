@@ -544,6 +544,14 @@ a {
     gap: 20px 10px;
   }
 }
+.main-nav__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .main-nav__link {
   display: flex;
   font-size: 16px;

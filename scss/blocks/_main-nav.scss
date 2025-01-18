@@ -7,7 +7,7 @@
     display: none;
   }
 
-  &__menu-inner {
+  &--menu {
     display: none;
   }
 
@@ -19,10 +19,32 @@
     align-items: center;
     gap: 40px;
     flex-wrap: wrap;
+    
+    &--menu {
+      display: none;
+    }
 
     @media(max-width: 1250px) {
       gap: 20px 10px;
     }
+
+    @include vp-1023 {
+      display: flex;
+    }
+  }
+
+  &__social {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__social-logo {
+    w
   }
 
   &__link {
