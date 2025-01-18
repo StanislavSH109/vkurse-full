@@ -1,4 +1,4 @@
-<h1>news portal vkurse-media :desktop_computer:</h1>
+<h1>News portal vkurse-media :desktop_computer:</h1>
 <h2>Desktop - 1440 :keyboard::computer_mouse: </h2>
 <p>
   <img src="assets/desktop.png">
