@@ -1,4 +1,8 @@
 .main-nav {
+  @include vp-1024 {
+    display: none;
+  }
+
   &__list {
     padding: 0;
     margin: 0;
