@@ -563,17 +563,17 @@ a {
   gap: 40px;
   flex-wrap: wrap;
 }
+@media (max-width: 1270px) {
+  .main-nav__list {
+    gap: 20px;
+  }
+}
 .main-nav__list--menu {
   display: none;
 }
 @media (max-width: 1023px) {
   .main-nav__list--menu {
     display: flex;
-  }
-}
-@media (max-width: 1250px) {
-  .main-nav__list {
-    gap: 20px 10px;
   }
 }
 @media (max-width: 1023px) {
@@ -601,7 +601,7 @@ a {
   font-weight: 500;
   color: #29539B;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1155px) {
   .main-nav__link {
     font-size: 14px;
     line-height: 20px;
