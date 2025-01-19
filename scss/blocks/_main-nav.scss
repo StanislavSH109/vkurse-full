@@ -73,6 +73,18 @@
 
     @include vp-1023 {
       display: flex;
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      flex-direction: column;
+      gap: 40px;
+      top: 50px;
+      right: 50px;
+    }
+
+    &-logo {
+      width: 30px;
+      height: 20px;
     }
   }
 
