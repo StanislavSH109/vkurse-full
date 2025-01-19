@@ -652,6 +652,7 @@ a {
     justify-content: center;
     top: auto;
     right: auto;
+    margin: 0 0 20px;
   }
 }
 .main-nav__social-logo {
@@ -688,6 +689,18 @@ a {
   .main-nav__social-link {
     display: flex;
   }
+}
+.main-nav__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.main-nav__phone-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 50;
+  line-height: 22px;
 }
 
 .breadcrumbs {
