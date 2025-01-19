@@ -26,6 +26,14 @@
         color: $color-white;
       }
 
+      #{$root}__burger {
+        display: none;
+
+        &--close {
+          display: flex;
+        }
+      }
+
       .main-nav {
         display: flex;
         justify-content: center;
@@ -126,6 +134,12 @@
         height: 32px;
         width: 32px;
       }
+    }
+  }
+
+  &__burger {
+    &--close {
+      display: none;
     }
   }
 }

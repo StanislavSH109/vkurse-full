@@ -20,6 +20,10 @@
       justify-content: center;
     }
 
+    @include vp-767 {
+      gap: 50px;
+    }
+
   }
   
   &__head {
@@ -59,13 +63,17 @@
         display: flex;
       }
     }
-
     
     @include vp-1023 {
       flex-direction: column;
       gap: 40px;
       width: 150px;
       align-items: flex-start;
+    }
+
+    @include vp-767 {
+      width: 120px;
+      gap: 20px;
     }
   }
 
@@ -82,7 +90,7 @@
       flex-direction: column;
       gap: 40px;
       top: calc(81px + 50px);
-      right: 50px;
+      right: 40px;
     }
 
     &-logo {
@@ -108,6 +116,12 @@
       font-size: 16px;
       line-height: 24px;
       color: $color-white;
+    }
+  }
+
+  &__social-link {
+    @include vp-1023 {
+      display: flex;
     }
   }
 }
