@@ -10,6 +10,18 @@
     overflow-y: auto;
     display: none;
 
+    @include vp-767 {
+      padding: 40px 0;
+    }
+  }
+
+  &__wrapper {
+    @include vp-767 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      
+    }
   }
 
   &__inner {
@@ -106,7 +118,7 @@
       justify-content: center;
       top: auto;
       right: auto;
-      margin: 0 0 20px;
+      margin: auto 0 20px;
     }
 
     &-logo {

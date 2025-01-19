@@ -555,6 +555,18 @@ a {
     display: none;
   }
 }
+@media (max-width: 1023px) and (max-width: 767px) {
+  .main-nav {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 767px) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+}
 @media (max-width: 1023px) {
   .main-nav__inner {
     display: flex;
@@ -652,7 +664,7 @@ a {
     justify-content: center;
     top: auto;
     right: auto;
-    margin: 0 0 20px;
+    margin: auto 0 20px;
   }
 }
 .main-nav__social-logo {
