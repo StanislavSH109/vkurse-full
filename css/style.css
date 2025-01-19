@@ -346,6 +346,10 @@ template {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
   color: #000000;
@@ -718,6 +722,9 @@ a {
 .breadcrumbs {
   padding: 20px 0 0;
 }
+.breadcrumbs__item:last-child {
+  overflow: hidden;
+}
 .breadcrumbs__list {
   padding: 0;
   margin: 0;
@@ -745,6 +752,10 @@ a {
 }
 .breadcrumbs__link:not(a) {
   color: #000000;
+  display: block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .categories {
@@ -764,6 +775,23 @@ a {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+@media (max-width: 1023px) {
+  .categories__list {
+    flex-wrap: nowrap;
+    overflow: auto;
+    margin: 0 -40px;
+    padding: 0 40px;
+  }
+  .categories__list::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .categories__list {
+    margin: 0 -10px;
+    padding: 0 10px;
+  }
 }
 .categories__item {
   display: flex;
@@ -829,8 +857,9 @@ a {
 .page-news__subtitle {
   font-size: 30px;
   line-height: 34px;
-  margin: 0 0 20px;
+  margin: -90px 0 20px;
   font-weight: 500;
+  padding: 90px 0 0;
 }
 @media (max-width: 1023px) {
   .page-news__subtitle {
@@ -859,6 +888,8 @@ a {
 }
 .page-news__nav {
   margin: 0 0 20px;
+  position: sticky;
+  top: 101px;
 }
 @media (max-width: 1023px) {
   .page-news__nav {
