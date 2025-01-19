@@ -7,6 +7,32 @@
   left: 0;
   z-index: 20;
   background-color: $color-white;
+  $root: &;
+
+  &--open {
+    @include vp-1023 {
+      background-color: $color-endeavour;
+      border-color: rgba($color-white, 0.2);
+
+      #{$root}__logo-link {
+        color: $color-white;
+      }
+
+      #{$root}__phone {
+        color: $color-endeavour;
+      }
+
+      #{$root}__users-link {
+        color: $color-white;
+      }
+
+      .main-nav {
+        display: flex;
+        justify-content: center;
+      }
+
+    }
+  }
 
   &__content {
     display: flex;

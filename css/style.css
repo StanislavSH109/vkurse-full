@@ -418,6 +418,25 @@ a {
   z-index: 20;
   background-color: #ffffff;
 }
+@media (max-width: 1023px) {
+  .header--open {
+    background-color: #29539B;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  .header--open .header__logo-link {
+    color: #ffffff;
+  }
+  .header--open .header__phone {
+    color: #29539B;
+  }
+  .header--open .header__users-link {
+    color: #ffffff;
+  }
+  .header--open .main-nav {
+    display: flex;
+    justify-content: center;
+  }
+}
 .header__content {
   display: flex;
   align-items: center;
@@ -524,6 +543,7 @@ a {
     background-color: #29539B;
     padding: 50px 0;
     overflow-y: auto;
+    display: none;
   }
 }
 @media (max-width: 1023px) {
