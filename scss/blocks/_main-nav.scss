@@ -7,6 +7,7 @@
     left: 0;
     background-color: $color-endeavour;
     padding: 50px 0;
+    overflow-y: auto;
   }
 
   &__inner {
@@ -73,18 +74,18 @@
 
     @include vp-1023 {
       display: flex;
-      position: absolute;
+      position: fixed;
       padding: 0;
       margin: 0;
       flex-direction: column;
       gap: 40px;
-      top: 50px;
+      top: calc(81px + 50px);
       right: 50px;
     }
 
     &-logo {
       width: 30px;
-      height: 20px;
+      height: 30px;
     }
   }
 

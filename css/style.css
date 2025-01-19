@@ -523,6 +523,7 @@ a {
     left: 0;
     background-color: #29539B;
     padding: 50px 0;
+    overflow-y: auto;
   }
 }
 @media (max-width: 1023px) {
@@ -587,18 +588,18 @@ a {
 @media (max-width: 1023px) {
   .main-nav__social {
     display: flex;
-    position: absolute;
+    position: fixed;
     padding: 0;
     margin: 0;
     flex-direction: column;
     gap: 40px;
-    top: 50px;
+    top: 131px;
     right: 50px;
   }
 }
 .main-nav__social-logo {
   width: 30px;
-  height: 20px;
+  height: 30px;
 }
 .main-nav__link {
   display: flex;
